@@ -1,0 +1,31 @@
+{
+    "env": {
+        "node": true,
+        "browser": true,
+        "es6": true
+    },
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "globals": {
+        "it": true,
+        "describe": true,
+        "expect": true
+    },
+    "settings": {
+        "import/resolver": {
+            "babel-module": {}
+        }
+    },
+    "rules": {
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "eslint-disable-line global-require": true
+    }
+}

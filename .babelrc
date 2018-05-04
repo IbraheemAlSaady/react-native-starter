@@ -1,0 +1,31 @@
+{
+  "presets": [
+    "babel-preset-react-native-stage-0/decorator-support"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-react-jsx-source"
+      ]
+    }
+  },
+  "plugins": [
+    "transform-object-rest-spread",
+    ["module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "cfg": "./src/config",
+        "utils": "./src/utils",
+        "assets": "./assets",
+        "components": "./src/components",
+        "containers": "./src/containers",
+        "routes": "./src/routes",
+        "action-types": "./src/types",
+        "actions": "./src/actions",
+        "reducers": "./src/reducers",
+        "sagas": "./src/sagas", 
+        "locales": "./locales"
+      }
+    }]
+  ]
+}
